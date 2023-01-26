@@ -135,9 +135,9 @@ class _MyAppState extends State<MyApp> {
 
     final buffer = wsalloc(length + 1);
     GetWindowText(hWnd, buffer, length + 1);
-    if (buffer.toDartString().endsWith("Visual Studio Code") && flag.index == 0) {
+    if (buffer.toDartString().endsWith("Visual Studio Code") && flag.index == 2) {
       // 剪贴板已经是图片
-      //Pasteboard.writeText(
+      // Pasteboard.writeText(
       //     '<div class="" style="text-align:center;"><img src=""C:\\Users\\16773\\Desktop\\下载.png"" style="zoom: 50%;box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px; border-radius: 10px;" /></div>');
       Pasteboard.writeText("test");
     }
